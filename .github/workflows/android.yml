@@ -32,7 +32,7 @@ jobs:
             -Dplatforms=android \
             -Dplatform-sdk-version=27 \
             -Dandroid-stub=true \
-            -Dllvm=disabled \
+            -Dllvm=enabled \
             -Dxlib-lease=disabled \
             -Degl=disabled \
             -Dgbm=disabled \
