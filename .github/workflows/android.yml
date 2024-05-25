@@ -62,7 +62,7 @@ jobs:
             -Dopengl=true \
             -Dosmesa=true \
             -Dvulkan-drivers= \
-            -Dgallium-drivers=swt \
+            -Dgallium-drivers=swr \
             -Dfreedreno-kmds= \
             -Dshared-glapi=false \
             -Dbuildtype=release
