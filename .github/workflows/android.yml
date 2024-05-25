@@ -40,7 +40,7 @@ jobs:
             -Dopengl=true \
             -Dosmesa=true \
             -Dvulkan-drivers= \
-            -Dgallium-drivers=llvmpipe,swr \
+            -Dgallium-drivers=swrast,swr \
             -Dshared-glapi=false \
             -Dbuildtype=release
           ninja -C "build-android" install
