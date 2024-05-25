@@ -25,8 +25,6 @@ jobs:
           export ANDROID_NDK_HOME="$ANDROID_SDK_ROOT/ndk-bundle"
           envsubst <android-${{matrix.arch}} >build-crossfile
           git clone --depth 1 --branch 21.2 https://gitlab.freedesktop.org/mesa/mesa/
-          git clone --depth 1 https://github.com/Vera-Firefly/mesa-build-fix
-          cp -rf mesa-build-fix/* mesa/
           cd mesa
           meson setup "build-android" \
             --prefix=/tmp/mesa \
@@ -42,7 +40,7 @@ jobs:
             -Dopengl=true \
             -Dosmesa=true \
             -Dvulkan-drivers= \
-            -Dgallium-drivers=swr \
+            -Dgallium-drivers=llvmpipe,swr \
             -Dshared-glapi=false \
             -Dbuildtype=release
           ninja -C "build-android" install
