@@ -42,7 +42,7 @@ jobs:
           cd ..
           envsubst <android-${{matrix.arch}} >build-crossfile
           git clone --depth 1 --branch 24.1 https://gitlab.freedesktop.org/mesa/mesa.git
-          #git clone --depth 1 https://github.com/Vera-Firefly/mesa-build-fix
+          #git clone --depth 1 --branch 24.1.1 https://github.com/Vera-Firefly/mesa-build-fix
           #cp -rf mesa-build-fix/* mesa/
           cd mesa
           meson setup "build-android" \
@@ -51,8 +51,8 @@ jobs:
             -Dplatforms=android \
             -Dplatform-sdk-version=29 \
             -Dandroid-stub=true \
-            #-Dandroid-libbacktrace=disabled \
-            #-Dandroid-strict=false \
+            -Dandroid-libbacktrace=disabled \
+            -Dandroid-strict=false \
             -Dxlib-lease=disabled \
             -Degl=disabled \
             -Dgbm=disabled \
