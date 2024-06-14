@@ -37,7 +37,7 @@ jobs:
             -Dnouveau=disabled \
             -Dvmwgfx=disabled \
             -Dfreedreno=disabled \
-            -Dvc4=disabled \
+            -Dvc4=enabled \
             -Detnaviv=disabled \
             -Dfreedreno-kgsl=false
           ninja -C "build-android" install
@@ -63,7 +63,7 @@ jobs:
             -Dopengl=true \
             -Dosmesa=true \
             -Dvulkan-drivers= \
-            -Dgallium-drivers=zink \
+            -Dgallium-drivers=v3d \
             -Dfreedreno-kmds= \
             -Dshared-glapi=false \
             -Dbuildtype=release
