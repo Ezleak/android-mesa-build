@@ -56,9 +56,9 @@ jobs:
             -Dandroid-libbacktrace=disabled \
             -Dandroid-strict=false \
             -Dxlib-lease=disabled \
-            -Degl=ensabled \
-            -Dgbm=ensabled \
-            -Dglx=ensabled \
+            -Degl=enabled \
+            -Dgbm=enabled \
+            -Dglx=enabled \
             -Dllvm=disabled \
             -Dopengl=true \
             -Dosmesa=true \
