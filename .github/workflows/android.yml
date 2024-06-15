@@ -59,11 +59,11 @@ jobs:
             -Degl=disabled \
             -Dgbm=disabled \
             -Dglx=disabled \
-            -Dllvm=disabled \
+            -Dllvm=enabled \
             -Dopengl=true \
             -Dosmesa=true \
             -Dvulkan-drivers= \
-            -Dgallium-drivers=panfrost \
+            -Dgallium-drivers=swrast \
             -Dfreedreno-kmds= \
             -Dshared-glapi=false \
             -Dbuildtype=release
