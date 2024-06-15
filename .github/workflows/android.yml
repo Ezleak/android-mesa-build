@@ -62,7 +62,7 @@ jobs:
             -Dllvm=disabled \
             -Dopengl=true \
             -Dosmesa=true \
-            -Dvulkan-drivers=swrast \
+            -Dvulkan-drivers=panfrost \
             -Dgallium-drivers= \
             -Dfreedreno-kmds= \
             -Dshared-glapi=false \
