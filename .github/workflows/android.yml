@@ -56,14 +56,14 @@ jobs:
             -Dandroid-libbacktrace=disabled \
             -Dandroid-strict=false \
             -Dxlib-lease=disabled \
-            -Degl=disabled \
-            -Dgbm=disabled \
-            -Dglx=disabled \
+            -Degl=ensabled \
+            -Dgbm=ensabled \
+            -Dglx=ensabled \
             -Dllvm=disabled \
             -Dopengl=true \
             -Dosmesa=true \
-            -Dvulkan-drivers=swast \
-            -Dgallium-drivers= \
+            -Dvulkan-drivers= \
+            -Dgallium-drivers=zink \
             -Dfreedreno-kmds= \
             -Dshared-glapi=false \
             -Dbuildtype=release
@@ -73,4 +73,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: libOSMesa_${{matrix.arch}}
-          path: /tmp/mesa/lib/libOSMesa_8.so
+          path: /tmp/mesa/lib/
