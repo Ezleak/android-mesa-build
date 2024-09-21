@@ -65,7 +65,7 @@ jobs:
             -Dgallium-drivers=svga \
             -Dglvnd=enabled \
             -Dglvnd-vendor-name=mesa \
-            -Dshared-glapi=disabled \
+            -Dshared-glapi=enabled \
             -Dbuildtype=release
           ninja -C "build-android" install
       - name: Upload libraries
