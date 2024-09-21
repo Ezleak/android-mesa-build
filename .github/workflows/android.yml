@@ -52,9 +52,9 @@ jobs:
             -Dplatforms=android \
             -Dplatform-sdk-version=26 \
             -Dandroid-stub=true \
-            -Dandroid-libbacktrace=enabled \
+            -Dandroid-libbacktrace=disabled \
             -Dandroid-strict=false \
-            -Dxlib-lease=enabled \
+            -Dxlib-lease=disabled \
             -Degl=enabled \
             -Dgbm=enabled \
             -Dglx=dri \
