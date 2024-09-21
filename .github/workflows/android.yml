@@ -55,18 +55,15 @@ jobs:
             -Dandroid-libbacktrace=disabled \
             -Dandroid-strict=false \
             -Dxlib-lease=disabled \
-            -Degl=enabled \
-            -Dgbm=enabled \
-            -Dglx=dri \
-            -Dx11=enabled \
+            -Degl=disabled \
+            -Dgbm=disabled \
+            -Dglx=disabled \
             -Dllvm=enabled \
             -Dopengl=true \
             -Dosmesa=true \
             -Dvulkan-drivers= \
             -Dgallium-drivers=svga \
-            -Dglvnd=enabled \
-            -Dglvnd-vendor-name=mesa \
-            -Dshared-glapi=enabled \
+            -Dshared-glapi=disabled \
             -Dbuildtype=release
           ninja -C "build-android" install
       - name: Upload libraries
