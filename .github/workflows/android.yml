@@ -61,12 +61,11 @@ jobs:
             -Dllvm=enabled \
             -Dopengl=true \
             -Dosmesa=true \
-            -Ddri-drivers= \
             -Dvulkan-drivers= \
             -Dgallium-drivers=svga \
             -Dglvnd=enabled \
             -Dglvnd-vendor-name=mesa \
-            -Dshared-glapi=false \
+            -Dshared-glapi=disabled \
             -Dbuildtype=release
           ninja -C "build-android" install
       - name: Upload libraries
