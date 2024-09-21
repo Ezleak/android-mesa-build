@@ -63,6 +63,8 @@ jobs:
             -Dosmesa=true \
             -Dvulkan-drivers= \
             -Dgallium-drivers=svga \
+            -Dglvnd=enabled \
+            -Dglvnd-vendor-name=mesa \
             -Dshared-glapi=false \
             -Dbuildtype=release
           ninja -C "build-android" install
