@@ -58,6 +58,7 @@ jobs:
             -Degl=enabled \
             -Dgbm=enabled \
             -Dglx=dri \
+            -Dx11=enabled \
             -Dllvm=enabled \
             -Dopengl=true \
             -Dosmesa=true \
