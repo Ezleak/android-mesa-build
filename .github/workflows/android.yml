@@ -56,11 +56,12 @@ jobs:
             -Dandroid-strict=false \
             -Dxlib-lease=enabled \
             -Degl=enabled \
-            -Dgbm=disabled \
-            -Dglx=enabled \
+            -Dgbm=enabled \
+            -Dglx=dri \
             -Dllvm=enabled \
             -Dopengl=true \
             -Dosmesa=true \
+            -Ddri-drivers= \
             -Dvulkan-drivers= \
             -Dgallium-drivers=svga \
             -Dglvnd=enabled \
